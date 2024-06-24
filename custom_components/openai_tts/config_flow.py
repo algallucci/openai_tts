@@ -20,8 +20,8 @@ async def validate_api_key(api_key: str):
     """Validate the API key format."""
     if api_key is None:
         raise WrongAPIKey("API key is required")
-    if not (51 <= len(api_key) <= 70):
-        raise WrongAPIKey("Invalid API key length")
+    #if not (51 <= len(api_key) <= 70):
+        #raise WrongAPIKey("Invalid API key length")
 
 async def validate_user_input(user_input: dict):
     """Validate user input fields."""
