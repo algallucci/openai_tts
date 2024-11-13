@@ -7,4 +7,4 @@ CONF_VOICE = 'voice'
 CONF_SPEED = 'speed'
 MODELS = ["tts-1", "tts-1-hd"]
 VOICES = ["alloy", "echo", "fable", "onyx", "nova", "shimmer", "batman"]
-URL = "http://192.168.68.86:8000/v1/audio/speech"
+URL = "http://192.168.68.52:8000/v1/audio/speech"
