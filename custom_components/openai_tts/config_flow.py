@@ -45,14 +45,14 @@ class OpenAITTSConfigFlow(ConfigFlow, domain=DOMAIN):
                 "custom_value": False
             }
         }),
-        vol.Required(CONF_URL): selector({
-            "select": {
-                "options": URL,
-                "mode": "dropdown",
-                "sort": True,
-                "custom_value": True
-            }
-        }),
+       # vol.Required(CONF_URL): selector({
+       #     "select": {
+       #         "options": URL,
+        #        "mode": "dropdown",
+        #        "sort": True,
+        #        "custom_value": True
+        #    }
+       # }),
         vol.Required(CONF_VOICE, default="shimmer"): selector({
             "select": {
                 "options": VOICES,
