@@ -25,6 +25,7 @@ async def async_setup_entry(
         config_entry.data[CONF_VOICE],
         config_entry.data[CONF_MODEL],
         config_entry.data[CONF_SPEED],
+        config_entry.data[CONF_URL]
     )
     async_add_entities([OpenAITTSEntity(hass, config_entry, engine)])
 
