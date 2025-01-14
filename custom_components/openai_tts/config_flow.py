@@ -45,7 +45,7 @@ class OpenAITTSConfigFlow(ConfigFlow, domain=DOMAIN):
                 "custom_value": False
             }
         }),
-        vol.Required(url): selector({
+        vol.Required(URL): selector({
             "select": {
                 "options": URL,
                 "mode": "dropdown",
