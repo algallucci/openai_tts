@@ -49,7 +49,7 @@ class OpenAITTSConfigFlow(ConfigFlow, domain=DOMAIN):
             "select": {
                 "options": URL,
                 "mode": "dropdown",
-                "sort" True,
+                "sort": True,
                 "custom_value": True
             }
         }),
