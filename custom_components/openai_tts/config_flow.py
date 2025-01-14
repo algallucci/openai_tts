@@ -9,7 +9,7 @@ from homeassistant.config_entries import ConfigFlow
 from homeassistant.helpers.selector import selector
 from homeassistant.exceptions import HomeAssistantError
 
-from .const import CONF_API_KEY, CONF_MODEL, CONF_VOICE, CONF_SPEED, DOMAIN, MODELS, VOICES, URL
+from .const import CONF_API_KEY, CONF_MODEL, CONF_VOICE, CONF_SPEED, CONF_URL, DOMAIN, MODELS, VOICES, URL
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -45,7 +45,7 @@ class OpenAITTSConfigFlow(ConfigFlow, domain=DOMAIN):
                 "custom_value": False
             }
         }),
-        vol.Required(URL): selector({
+        vol.Required(CONF_URL): selector({
             "select": {
                 "options": URL,
                 "mode": "dropdown",
