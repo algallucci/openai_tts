@@ -8,8 +8,7 @@
           "api_key": "Enter OpenAI API key.",
           "speed": "Enter speed of the speech",
           "model": "Select model to be used.",
-          "voice": "Select voice.",
-          "url": "Select the IP Address."
+          "voice": "Select voice."
         }
       }
     },
